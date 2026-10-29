@@ -1,0 +1,18 @@
+[
+  {
+    "id": "sample-meeting-notes",
+    "code": "000",
+    "title": "회의 메모, 회의록으로 바로 정리하기",
+    "description": "적어 둔 메모를 붙여넣으면 결정 사항·할 일·다음 일정으로 나눠 줘요. 실제 화면 순서와 복사용 프롬프트 3개를 담는 견본이에요.",
+    "hook": "메모만 있으면, 3단계로 끝.",
+    "category": "업무 자동화",
+    "keywords": ["회의록", "회의", "메모", "요약", "정리", "할 일", "프롬프트", "직장인", "견본"],
+    "url": "sample/",
+    "updated": "2026-10-29",
+    "status": "AI 채팅 서비스 계정 필요",
+    "letter": "회",
+    "featured": true,
+    "sample": true,
+    "ticket": { "label": "MEETING / NOTES GUIDE", "big": "3단계", "unit": "STEPS" }
+  }
+]

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#FFF9F0">
+  <title>AI 자료실 — 필요한 안내를 한곳에서</title>
+  <meta name="description" content="인스타그램 @aigents_ai 에서 본 AI 활용법과 프롬프트, 자세한 방법을 한곳에서 찾아보세요.">
+  <meta property="og:title" content="AI 자료실 — 필요한 안내를 한곳에서">
+  <meta property="og:description" content="게시물에서 본 AI 활용법, 여기서 이어보세요. 게시물 번호나 키워드로 바로 찾을 수 있어요.">
+  <meta property="og:type" content="website">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/styles.css">
+  <script type="module" src="assets/app.js"></script>
+</head>
+<body>
+  <a class="skip" href="#library">자료 목록으로 건너뛰기</a>
+  <header class="site-header wrap" id="top">
+    <a class="brand" href="./" aria-label="AI 자료실 처음으로"><span class="brand-mark" aria-hidden="true">ai<span></span></span><span>AI 자료실</span></a>
+    <nav aria-label="주요 메뉴"><a href="#about">이 자료실은</a><button class="icon-button" type="button" data-copy-url aria-label="자료실 링크 복사"><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="8" y="8" width="12" height="12" rx="3"/><path d="M15 4H7a3 3 0 0 0-3 3v8"/></svg><span>링크 복사</span></button></nav>
+  </header>
+  <main data-page="library">
+    <section class="library-hero wrap" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span></span> AI 업무 활용, 쉽게 따라 하는 안내</p>
+        <h1 id="hero-title">필요한 AI 정보,<br><em>한 곳에서</em> 찾아요.</h1>
+        <p class="lead">게시물에서 본 방법이 궁금할 때,<br>실제 화면과 바로 쓰는 프롬프트를 여기서 이어보세요.</p>
+        <a class="text-link" href="#library">자료 찾아보기 <span aria-hidden="true">↓</span></a>
+      </div>
+      <div id="featured" aria-live="polite">
+        <div class="featured-note"><div class="note-top"><span>이번 안내</span><span>불러오는 중</span></div><div class="paper-ticket" aria-hidden="true"><span>AI GUIDE</span><strong>…</strong><small></small></div><div class="note-bottom"><div><span class="tag">안내</span><h2>이번 안내를 불러오고 있어요</h2><p>잠시만 기다려 주세요.</p></div></div></div>
+      </div>
+    </section>
+
+    <section class="library-section wrap" id="library" aria-labelledby="library-title">
+      <div class="dm-help" id="dm-help">
+        <span class="dm-help-icon" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4h11A2.5 2.5 0 0 1 20 6.5v8a2.5 2.5 0 0 1-2.5 2.5H10l-4.5 3.5V17A2.5 2.5 0 0 1 4 14.5z"/><path d="M8.5 9.5h7M8.5 12.5h4"/></svg></span>
+        <div>
+          <strong>DM이 오지 않았나요?</strong>
+          <p>게시물 마지막 장의 <b>번호(예: No.001)</b>나 키워드를 아래에 입력하면 같은 자료가 나와요. 팔로우 전이라면 DM이 ‘메시지 요청’함에 들어가 있을 수도 있어요.</p>
+        </div>
+        <a class="button secondary" href="#search-input" data-focus-search>번호로 찾기 ↓</a>
+      </div>
+
+      <div class="section-heading"><div><p class="eyebrow">GUIDE INDEX</p><h2 id="library-title">안내 모아보기</h2></div><span class="result-count" id="result-count" aria-live="polite">자료 불러오는 중</span></div>
+      <form class="search" role="search" id="search-form"><label class="sr-only" for="search-input">자료 검색</label><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.5" cy="10.5" r="6.5"/><path d="m16 16 5 5"/></svg><input id="search-input" type="search" autocomplete="off" placeholder="게시물 번호나 키워드로 찾아보세요" aria-controls="guide-list"><button class="search-clear" id="search-clear" type="button" hidden aria-label="검색어 지우기">×</button></form>
+      <div class="filters" id="filters" aria-label="자료 분류"></div>
+      <div class="guide-list" id="guide-list"></div>
+      <div class="empty-state" id="empty-state" hidden><span aria-hidden="true">⌕</span><h3 id="empty-title">찾는 자료가 아직 없어요.</h3><p id="empty-text">게시물 번호(예: 001)나 다른 검색어를 입력해 보세요.</p><button class="button secondary" type="button" id="reset-search">전체 자료 보기</button></div>
+      <p class="index-note">새로운 안내가 생기면 이곳에 차곡차곡 모아둘게요.</p>
+    </section>
+
+    <section class="about-band" id="about"><div class="wrap about-content"><span class="little-index">READ. TRY. CHECK.</span><div><h2>읽고 끝내지 않도록,<br>따라 할 순서를 정리해요.</h2><p>코딩을 몰라도 AI를 업무에 바로 쓸 수 있게, 실제 화면을 단계별로 보여드려요. 자료마다 확인한 날짜와 공식 출처를 함께 표시해요. 서비스 화면이나 조건이 바뀌면 해당 안내를 먼저 확인해주세요.</p></div></div></section>
+  </main>
+  <footer class="site-footer wrap"><div><strong>AI 자료실</strong><p>새 안내는 인스타그램 <a href="https://www.instagram.com/aigents_ai/" target="_blank" rel="noopener noreferrer">@aigents_ai</a>에서 먼저 올라와요.</p></div><a href="#top">맨 위로 ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
